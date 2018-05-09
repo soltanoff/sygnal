@@ -4,6 +4,7 @@ logfile = var/sygnal.log
 
 [apps]
 com.example.myapp.ios.type = apns
+com.example.myapp.ios.platform = sandbox
 com.example.myapp.ios.certfile = com.example.myApp_prod_APNS.pem
 com.example.myapp.android.type = gcm
 com.example.myapp.android.apiKey = your_api_key_for_gcm
