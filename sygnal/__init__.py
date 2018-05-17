@@ -205,7 +205,7 @@ def notify():
     for d in notif.devices:
         appid = d.app_id
         if appid not in pushkins:
-            logger.warn("Got notification for unknown app ID %s", appid)
+            logger.warn("Got notification for unknown app ID %s; PUSHKIN'S=[%s]", appid, ';'.join(pushkins))
             rej.append(d.pushkey)
             continue
 
